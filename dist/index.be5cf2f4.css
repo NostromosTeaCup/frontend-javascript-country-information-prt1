@@ -12,15 +12,59 @@ body {
 }
 
 h1 {
-    font-family: 'Gilda Display', sans-serif;
+    font-family: 'Gilda Display', serif;
     margin: 40px;
 }
 
 #countries-list {
     list-style-type: none;
     column-count: 3;
-    max-width: 800px;
+    max-width: 900px;
     border-radius: 4px;
-    border: 1px solid black
+    border: 1px solid #F0E8E8;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #FFF9F9;
+    box-shadow: 0 0 12px #F0E8E8;
+}
+
+.map-of-the-world {
+    width: 1200px;
+    margin-bottom: 20px;
+}
+
+.flag {
+    width: 20px;
+    margin: 4px;
+    display: inline-block;
+}
+
+.population {
+    font-size: 10px;
+    border-bottom: 1px solid #E1DADA;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: orange;
+}
+
+.purple {
+    color: purple;
+}
+
+.default {
+    color: grey;
 }
 /*# sourceMappingURL=index.be5cf2f4.css.map */

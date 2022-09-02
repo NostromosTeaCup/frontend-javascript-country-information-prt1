@@ -502,15 +502,17 @@ function createCountryList(countries) {
 function continent(current) {
     switch(current){
         case 'Africa':
-            return blue;
+            return 'blue';
         case 'Americas':
-            return green;
+            return 'green';
         case 'Asia':
-            return red;
+            return 'red';
         case 'Europe':
-            return yellow;
+            return 'yellow';
         case 'Oceania':
-            return purple;
+            return 'purple';
+        default:
+            return 'default';
     }
 }
 
