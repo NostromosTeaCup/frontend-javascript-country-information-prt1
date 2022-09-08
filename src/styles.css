@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Poppins&display=swap');
 
+/********************GLOBAL***************/
+
 * {
     margin: 0;
     padding: 0;
@@ -15,18 +17,27 @@ body {
 h1 {
     font-family: 'Gilda Display', serif;
     margin: 40px;
+    text-transform: capitalize;
 }
+
+:root {
+    --border-colors: #F0E8E8;
+    --background-colors: #FFF9F9;
+    --shadow-color: #F0E8E8;
+}
+
+/**************STYLING PART 1*****************/
 
 #countries-list {
     list-style-type: none;
     column-count: 3;
     max-width: 900px;
     border-radius: 4px;
-    border: 1px solid #F0E8E8;
+    border: 1px solid var(--border-colors);
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #FFF9F9;
-    box-shadow: 0 0 12px #F0E8E8;
+    background-color: var(--background-colors);
+    box-shadow: 0 0 12px var(--shadow-color);
 }
 
 .map-of-the-world {
@@ -67,4 +78,54 @@ h1 {
 
 .default {
     color: grey;
+}
+
+/*************STYLING PART 2****************/
+
+.btn {
+    text-transform: capitalize;
+    background-color: var(--background-colors);
+    border: solid 1px var(--border-colors);
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-form input {
+    border: 1px solid var(--border-colors);
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-right: 8px;
+    box-shadow: 0 0 12px var(--shadow-color);
+}
+
+.search-result-box {
+    border-radius: 8px;
+    box-shadow: 0 0 12px var(--shadow-color);
+    padding: 24px;
+    margin: 72px 0;
+}
+
+.search-result-box h2 {
+    font-size: 42px;
+    padding: 0 0 12px 0;
+}
+
+.search-result-box p {
+    padding: 8px 0;
+}
+
+.flag-title {
+    border-bottom: 1px solid var(--shadow-color);
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 12px 0;
+}
+
+.error-message {
+    padding: 16px 0;
+    color: darkred;
+    border-radius: 8px;
 }
